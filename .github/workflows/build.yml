@@ -1,0 +1,33 @@
+name: Create resourcepack zip
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    env:
+      WORK_DIR: ${{ github.workspace }}
+      OUT_DIR: /build
+      NAME: vapes-rp
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install zip
+        run: |
+          sudo apt update
+          sudo apt install -y zip
+
+      - name: Execute build script
+        id: build
+        run: sudo -E bash create_zip.sh --force-rebuild-dir
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.3
+        with:
+          name: ${{ env.NAME }}-${{ steps.build.outputs.VERSION }}
+          path: ${{ env.OUT_DIR }}/${{ env.NAME }}-${{ steps.build.outputs.VERSION }}

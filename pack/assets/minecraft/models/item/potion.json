@@ -1,0 +1,21 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/potion_overlay",
+        "layer1": "item/potion"
+    },
+	"overrides": [
+		{ "predicate": { "custom_model_data": 300002 }, "model": "item/jijas/jija_bolotnaya" },
+		{ "predicate": { "custom_model_data": 300003 }, "model": "item/jijas/jija_harcorus" },
+		{ "predicate": { "custom_model_data": 300004 }, "model": "item/jijas/jija_outbreak" },
+		{ "predicate": { "custom_model_data": 300005 }, "model": "item/jijas/jija_quasar" },
+
+		{ "predicate": { "custom_model_data": 300006 }, "model": "item/vapes/vape_avalanche" },
+		{ "predicate": { "custom_model_data": 300007 }, "model": "item/vapes/vape_nebula" },
+		{ "predicate": { "custom_model_data": 300008 }, "model": "item/vapes/vape_quadro" },
+		{ "predicate": { "custom_model_data": 300009 }, "model": "item/vapes/vape_hikigaeru00" },
+		{ "predicate": { "custom_model_data": 300010 }, "model": "item/vapes/vape_hqd" },
+		{ "predicate": { "custom_model_data": 300011 }, "model": "item/vapes/vape_jesus_666_s" },
+		{ "predicate": { "custom_model_data": 300012 }, "model": "item/vapes/vape_quadro_secret" }
+	]
+}
