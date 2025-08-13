@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "outbreak_vapes:item/gui/vape_refill_button"
+  }
+}

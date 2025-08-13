@@ -1,0 +1,15 @@
+{
+  "parent": "outbreak_vapes:item/jijas/jija_base",
+  "textures": {
+    "0": "outbreak_vapes:item/jijas/jija_bolotnaya",
+    "particle": "outbreak_vapes:item/jijas/jija_bolotnaya"
+  },
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 300002
+			},
+			"model": "item/gold_ingot"
+		}
+	]
+}
